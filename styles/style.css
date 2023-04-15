@@ -7,7 +7,7 @@
 }
 
 body {
-    margin: auto;
+    margin: 0px;
     display: grid;
     grid-template-areas: 
         "header header"
@@ -15,8 +15,8 @@ body {
         "footer footer"
     ; 
 
-    grid-template-columns: 1fr 300px;
-    grid-template-rows: 100px 1fr 25px;
+    grid-template-columns: 1fr 710px;
+    background-color: #F3F3F3;
 }
 
 ul, li {
@@ -30,23 +30,29 @@ a {
 }
 
 div {
-    border: 1px black solid;
     margin: auto;
     border-radius: 10px;
     margin: 20px;
+    border: 1px black solid;
 }
 
+button {
+    border-radius: 9999px;
+    padding: 6px 16px;
+}
 
 /* Header */
 header {
     grid-area: header;
-    height:100px;
+    max-height: 55px;
     border: 0.5px solid black;
 }
 
 div#navbarContainer {
-   display: flex;
-   align-items: center; 
+    margin:  0px 420px;
+    max-height: 55px;
+    display: flex;
+    align-items: center; 
 }
 
 a#linkedinLogo {
@@ -65,8 +71,8 @@ input, div#inputSearch {
 
 /* Main */
 main {
-    margin: auto;
-    background-color: #F3F3F3;
+    max-width: 1000px;
+    margin-left: 400px;
 }
 
 .smallImg{
@@ -74,7 +80,11 @@ main {
 }
 
 div#wallpaperImg {
-    height: 250px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 190px;
+    max-height: 190px;
     background: url(../assets/wallpaper.jpg);
     background-repeat: no-repeat;
     border-radius: 10px 10px 0px 0px;
@@ -85,13 +95,28 @@ section#cardProfile {
 }
 
 img#profileImg {
+    width: 140px;
+    margin-left: 20px;
+    position: absolute;
+    top: 15%;
     border-radius: 50%;
-    border: 5px black solid;
+    border: 5px white solid;
 }
 
 div#cardProfileGrid {
+    margin: 20px 10px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 70% auto;
+}
+
+div#cardProfileInfos, div#cardProfileWork {
+    max-height: 100px;
+    margin: 20px 5px 20px 10px
+}
+
+div#cardProfileButtons {
+    margin: 0px  5px 20px 10px;
+    min-width: 450px;
 }
 
 div.bodyGrid {
@@ -101,6 +126,7 @@ div.bodyGrid {
 
 /* Aside */
 aside {
+    margin-right: 400px;
     grid-area: aside;
 }
 
