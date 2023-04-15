@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* Tags gerais */
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer"
+    ; 
+
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 100px 1fr 25px;
+}
+
+ul, li {
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+div {
+    border: 1px black solid;
+    margin: auto;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+/* Header */
+header {
+    grid-area: header;
+    height:100px;
+    border: 0.5px solid black;
+}
+
+div#navbarContainer {
+   display: flex;
+   align-items: center; 
+}
+
+a#linkedinLogo {
+    text-decoration: none;
+}
+
+input, div#inputSearch {
+    width: 250px;
+    display: flex;
+}
+
+#navbar { 
+    margin: auto;
+    display: grid;
+}
+
+/* Main */
+main {
+    margin: auto;
+    background-color: #F3F3F3;
+}
+
+.smallImg{
+    width: 48px;
+}
+
+div#wallpaperImg {
+    height: 250px;
+    background: url(../assets/wallpaper.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px;
+}
+
+section#cardProfile {
+    background-color: #FFFFFF;
+}
+
+img#profileImg {
+    border-radius: 50%;
+    border: 5px black solid;
+}
+
+div#cardProfileGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+div.bodyGrid {
+    display: grid;
+    grid-area: auto;
+}
+
+/* Aside */
+aside {
+    grid-area: aside;
+}
+
+/* Footer */
+footer {
+    margin: 0;
+    padding: 0;
+    grid-area: footer;
+    width: auto;
+}
+
+div#footerContainer {
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+}
