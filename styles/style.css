@@ -1,9 +1,14 @@
 @charset "UTF-8";
+:root {
+    --blue: #0A66C2;
+    --white: #FFFFFF
+}
 
 /* Tags gerais */
 * { 
     margin: 0;
     padding: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont,  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 body {
@@ -19,6 +24,23 @@ body {
     background-color: #F3F3F3;
 }
 
+main > section > div > div > span,
+main > section > div > div > div > span,
+main > section > div > div > div > ul,
+main > section > div > div > ul{
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
 ul, li {
     text-decoration: none;
     display: inline-block;
@@ -27,6 +49,7 @@ ul, li {
 
 a {
     text-decoration: none;
+    color: var(--blue);
 }
 
 div {
@@ -39,6 +62,19 @@ div {
 button {
     border-radius: 9999px;
     padding: 6px 16px;
+    color: #00000099;
+    border: 1.5px solid #00000099;
+}
+
+button:nth-child(1) {
+    color: var(--white);
+    background: var(--blue);
+}
+
+button:nth-child(2) {
+    background: var(--white);
+    color: var(--blue);
+    border: 1.5px solid var(--blue);
 }
 
 /* Header */
@@ -62,7 +98,36 @@ input, div#inputSearch {
 
 nav#navbar { 
     margin: auto;
-    display: grid;
+    display: flex;
+
+}
+
+.navbarListGrid {
+    font-size: 12px;
+    margin: 0px 0px 5px 0px; 
+    display: inline-grid;
+    grid-template-columns: 40% auto;
+    
+    text-align: center;
+    vertical-align: middle
+
+    !important;
+}
+
+.navbarListGrid:nth-child(1){
+    margin-left: 30px;
+}
+
+.text24px {
+    font-size: 24px;
+}
+
+.text16px {
+    font-size: 16px;
+}
+
+.text14px {
+    font-size: 14px;
 }
 
 /* Main */
@@ -78,12 +143,10 @@ main {
 div#wallpaperDiv {
     margin: 0px;
     padding: 0px;
-}
-
-img#wallpaperImg {
-    width: 100%;
+    background-size: cover;
     min-height: 190px;
     max-height: 190px;
+    background-image: url('../assets/wallpaper.jpg');
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -118,8 +181,13 @@ div#cardProfileWork {
 
 div#cardProfileButtons {
     margin: 0px  5px 20px 10px;
-    min-width: 450px;
+    min-width: 470px;
 }
+
+div#cardProfileButtons > button {
+    font-weight: bold;
+}
+
 
 .cardProfileWorkGrid {
     font-size: 14px;
