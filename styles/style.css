@@ -49,14 +49,10 @@ header {
 }
 
 div#navbarContainer {
-    margin:  0px 420px;
+    margin: 0px 420px;
     max-height: 55px;
     display: flex;
     align-items: center; 
-}
-
-a#linkedinLogo {
-    text-decoration: none;
 }
 
 input, div#inputSearch {
@@ -64,7 +60,7 @@ input, div#inputSearch {
     display: flex;
 }
 
-#navbar { 
+nav#navbar { 
     margin: auto;
     display: grid;
 }
@@ -76,17 +72,18 @@ main {
 }
 
 .smallImg{
-    width: 48px;
+    width: 32px;
 }
 
-div#wallpaperImg {
+div#wallpaperDiv {
     margin: 0px;
     padding: 0px;
+}
+
+img#wallpaperImg {
     width: 100%;
     min-height: 190px;
     max-height: 190px;
-    background: url(../assets/wallpaper.jpg);
-    background-repeat: no-repeat;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -109,9 +106,14 @@ div#cardProfileGrid {
     grid-template-columns: 70% auto;
 }
 
-div#cardProfileInfos, div#cardProfileWork {
+div#cardProfileInfos{
     max-height: 100px;
     margin: 20px 5px 20px 10px
+}
+
+div#cardProfileWork {
+    max-height: 100px;
+    margin: 20px 5px 20px 0px
 }
 
 div#cardProfileButtons {
@@ -119,9 +121,21 @@ div#cardProfileButtons {
     min-width: 450px;
 }
 
+.cardProfileWorkGrid {
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
 div.bodyGrid {
     display: grid;
     grid-area: auto;
+}
+
+.verticalAlign {
+    font-size: 14px;
+    vertical-align: middle;
 }
 
 /* Aside */
