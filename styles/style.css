@@ -1,7 +1,12 @@
 @charset "UTF-8";
 :root {
     --blue: #0A66C2;
-    --white: #FFFFFF
+    --white: #FFFFFF;
+    --background: #f3f2ef;
+    --golden: #5D3B09;
+    --grey: #00000099;
+    --hoverGrey: #000000;
+    --borderColor: #e2e2e2;
 }
 
 /* Tags gerais */
@@ -21,7 +26,7 @@ body {
     ; 
 
     grid-template-columns: 1fr 710px;
-    background-color: #F3F3F3;
+    background-color: var(--background);
 }
 
 main > section > div > div > span,
@@ -45,6 +50,7 @@ ul, li {
     text-decoration: none;
     display: inline-block;
     padding-right: 7px;
+    max-height: 43px;
 }
 
 a {
@@ -56,7 +62,10 @@ div {
     margin: auto;
     border-radius: 10px;
     margin: 20px;
-    border: 1px black solid;
+}
+
+img  {
+    border-radius: 50%;
 }
 
 button {
@@ -75,6 +84,11 @@ button:nth-child(2) {
     background: var(--white);
     color: var(--blue);
     border: 1.5px solid var(--blue);
+}
+
+.backgroundDivColor {
+    background-color: var(--white);
+    border: 1px var(--borderColor) solid;
 }
 
 /* Header */
@@ -98,16 +112,29 @@ input, div#inputSearch {
 
 nav#navbar { 
     margin: auto;
-    display: flex;
+    display: grid;
+}
 
+nav#navbar > ul > li > a {
+    color: var(--grey);
+}
+
+nav#navbar > ul > li > a:hover {
+    color: var(--hoverGrey);
+}
+
+.premiumButton > a{
+    justify-content: center;
+    text-decoration: underline;
+    color: var(--golden)
+
+    !important
 }
 
 .navbarListGrid {
     font-size: 12px;
-    margin: 0px 0px 5px 0px; 
-    display: inline-grid;
     grid-template-columns: 40% auto;
-    
+    margin: 0px 7px 0px 0px;
     text-align: center;
     vertical-align: middle
 
@@ -115,7 +142,7 @@ nav#navbar {
 }
 
 .navbarListGrid:nth-child(1){
-    margin-left: 30px;
+    margin-left: 77px;
 }
 
 .text24px {
@@ -130,6 +157,9 @@ nav#navbar {
     font-size: 14px;
 }
 
+.textAllign {
+    text-align: center;
+}
 /* Main */
 main {
     max-width: 1000px;
@@ -159,7 +189,6 @@ img#profileImg {
     margin-left: 20px;
     position: absolute;
     top: 15%;
-    border-radius: 50%;
     border: 5px white solid;
 }
 
@@ -204,6 +233,23 @@ div.bodyGrid {
 .verticalAlign {
     font-size: 14px;
     vertical-align: middle;
+}
+
+.fakeHorizontalRow {
+    border-top: 1px solid var(--borderColor);
+    border-radius: 0;
+}
+
+div.textAllign {
+    border-top: 1px solid var(--borderColor);
+    border-radius: 0;
+    padding-top: 8px;
+    margin: 10px 0px;
+}
+
+div.textAllign > a {
+    text-decoration: none;
+    color: var(--grey);
 }
 
 /* Aside */

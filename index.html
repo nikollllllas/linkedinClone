@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="backgroundDivColor">
         <div id="navbarContainer">
             <a id="linkedinLogoLink"
                 href="https://www.linkedin.com/feed/?nis=true"
@@ -74,20 +74,24 @@
                         </a>
                     </li>
                     <li class="navbarListGrid">
-                        <img width="24" src="https://media.licdn.com/dms/image/D4E35AQGmB-jHz2LZ5A/profile-framedphoto-shrink_100_100/0/1658294415650?e=1682078400&amp;v=beta&amp;t=80v5gNpCn3-0s5w4BYsS4Nt-e6PWGBWyoNJ_b7pMquE" height="24" alt="Nikollas Ohta" id="ember15" class="global-nav__me-photo ember-view">
-                        <p>Eu</p>
+                        <a href="#">
+                            <img width="24" src="https://media.licdn.com/dms/image/D4E35AQGmB-jHz2LZ5A/profile-framedphoto-shrink_100_100/0/1658294415650?e=1682863200&v=beta&t=ZaFElCpX_c_NmXfDMVcI3oXZyPwte5pxuSOdz9L233k" height="24" alt="Nikollas Ohta" id="ember15" class="global-nav__me-photo ember-view">
+                            <p>Eu</p>
+                        </a>
                     </li>
                     <li class="navbarListGrid">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps=24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
-                            <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
-                        </svg>
-                        <p>Para negócios</p>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps=24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                            </svg>
+                            <p>Para negócios</p>
+                        </a>
                     </li>
-                    <li>
+                    <li class="navbarListGrid premiumButton">
                         <a
                         href="https://www.linkedin.com/premium/survey/" 
                         target="_blank">
-                        Seja contratado mais rápido. Tente Premium Livre.
+                        Seja contratado mais <br> rápido. Tente Premium <br> Livre.
                         </a>
                     </li>
                 </ul>
@@ -96,7 +100,8 @@
     </header>
     <main>
         <section>
-            <div id="cardProfile">
+            <div id="cardProfile"
+                class="backgroundDivColor">
                 <div id="wallpaperDiv">  
                 </div>            
                 <div id="cardProfileGrid">
@@ -149,7 +154,7 @@
             </div>
         </section>
         <section>
-            <div>
+            <div class="backgroundDivColor">
                 <div>
                     <h2>Sobre</h2>
                 </div>
@@ -161,7 +166,7 @@
             </div>
         </section>
         <section>
-            <div>
+            <div class="backgroundDivColor">
                 <div>
                     <h2>Atividades</h2>
                     <span>/// seguidores</span>
@@ -177,19 +182,20 @@
                         <!--Reações-->
                     </div>
                 </div>
-                <hr>
                 <div>
-                    <div>
-                        <span><strong>Nikollas Ohta</strong> comentou em uma publicação · 2m</span>
+                    <div class="fakeHorizontalRow">
                     </div>
                     <div>
-                        <span>O workshop foi um sucesso mesmo! Quando será o próximo? · 5m</span>
+                        <span><strong>Nikollas Ohta</strong> comentou em uma publicação · 5m</span>
+                    </div>
+                    <div>
+                        <span>O workshop foi um sucesso mesmo! Quando será o próximo?</span>
                     </div>
                     <div>
                         <!--Reações-->
                     </div>
                 </div>
-                <div>
+                <div class="textAllign">
                     <a
                         href="#">
                         <span>Exibir todas as atividades →</span>
@@ -198,7 +204,7 @@
             </div>
         </section>
         <section>
-            <div>
+            <div class="backgroundDivColor">
                 <div>
                     <h2>Experiência</h2>
                 </div>
@@ -220,6 +226,8 @@
                     </div>
                 </div>
                 <div>
+                    <div class="fakeHorizontalRow">
+                    </div>
                     <div>
                         <img
                         src="assets/proibido.png"
@@ -238,7 +246,7 @@
             </div>
         </section>
         <section>
-            <div>
+            <div class="backgroundDivColor">
                 <div>
                     <h2>Formação acadêmica</h2>
                 </div>
@@ -263,7 +271,7 @@
             </div>
         </section>
         <section>
-            <div>
+            <div class="backgroundDivColor">
                 <div>
                     <h2>Competências</h2>
                 </div>
@@ -275,9 +283,10 @@
                         alt="">
                         <span>Unipar - Universidade Paranaense</span>
                     </div>
-                    <hr>
                 </div>
                 <div>
+                    <div class="fakeHorizontalRow">
+                    </div>
                     <h3>Solução de problemas técnicos</h3>
                     <div>
                         <img
@@ -285,9 +294,10 @@
                         alt="">
                         <span>Estagiário de TI na Secretaria Municipal da Saúde</span>
                     </div>
-                    <hr>
                 </div>
                 <div>
+                    <div class="fakeHorizontalRow">
+                    </div>
                     <h3>Suporte técnico</h3>
                     <div>
                         <img
@@ -296,7 +306,7 @@
                         <span>Estagiário de TI na Secretaria Municipal da Saúde</span>
                     </div>
                 </div>
-                <div>
+                <div class="textAllign">
                     <a
                         href="#">
                         <h3>Exibir todas as 11 competências →</h3>
@@ -305,7 +315,7 @@
             </div>
         </section>
         <section>
-            <div>
+            <div class="backgroundDivColor">
                 <div>
                     <h2>Interesses</h2>
                 </div>
@@ -335,7 +345,7 @@
     </main>
     <aside>
         <section>
-            <div>
+            <div class="backgroundDivColor">
                 <div>
                     <h3>As pessoas também viram</h3>
                 </div>
@@ -388,7 +398,7 @@
             </div>
         </section>
         <section>
-            <div>
+            <div class="backgroundDivColor">
                 <div>
                     <h3>Pessoas que talvez você conheça</h3>
                 </div>
