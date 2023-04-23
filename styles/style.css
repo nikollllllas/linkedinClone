@@ -17,15 +17,15 @@
 }
 
 body {
-    margin: 0px;
+    margin: auto;
     display: grid;
     grid-template-areas: 
-        "header header"
-        "main aside"
-        "footer footer"
+        "header header header header"
+        "div main aside aside"
+        "footer footer footer footer"
     ; 
 
-    grid-template-columns: 1fr 710px;
+    grid-template-columns: 15% 40% 40% 5%;
     background-color: var(--background);
 }
 
@@ -71,13 +71,14 @@ img  {
 button {
     border-radius: 9999px;
     padding: 6px 16px;
-    color: #00000099;
-    border: 1.5px solid #00000099;
+    color: var(--grey);
+    border: 1.5px solid var(--grey);
 }
 
 button:nth-child(1) {
     color: var(--white);
     background: var(--blue);
+    border: 1.5px solid var(--blue);
 }
 
 button:nth-child(2) {
@@ -88,7 +89,7 @@ button:nth-child(2) {
 
 .backgroundDivColor {
     background-color: var(--white);
-    border: 1px var(--borderColor) solid;
+    border: 1px solid var(--borderColor);
 }
 
 /* Header */
@@ -99,7 +100,8 @@ header {
 }
 
 div#navbarContainer {
-    margin: 0px 420px;
+    max-width: 1200px;
+    margin: auto;
     max-height: 55px;
     display: flex;
     align-items: center; 
@@ -124,6 +126,7 @@ nav#navbar > ul > li > a:hover {
 }
 
 .premiumButton > a{
+    margin-top: 0px;
     justify-content: center;
     text-decoration: underline;
     color: var(--golden)
@@ -160,14 +163,20 @@ nav#navbar > ul > li > a:hover {
 .textAllign {
     text-align: center;
 }
+
+
 /* Main */
 main {
-    max-width: 1000px;
-    margin-left: 400px;
+    max-width: 1200px;
+    margin-left: auto;
 }
 
 .smallImg{
-    width: 32px;
+    max-width: 32px;
+}
+
+.mediumImg {
+    width: 48px;
 }
 
 div#wallpaperDiv {
@@ -188,7 +197,7 @@ img#profileImg {
     width: 140px;
     margin-left: 20px;
     position: absolute;
-    top: 15%;
+    top: 18%;
     border: 5px white solid;
 }
 
@@ -217,7 +226,6 @@ div#cardProfileButtons > button {
     font-weight: bold;
 }
 
-
 .cardProfileWorkGrid {
     font-size: 14px;
     margin: 0px 0px 10px 0px;
@@ -240,6 +248,13 @@ div.bodyGrid {
     border-radius: 0;
 }
 
+.flexRows {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
 div.textAllign {
     border-top: 1px solid var(--borderColor);
     border-radius: 0;
@@ -252,10 +267,20 @@ div.textAllign > a {
     color: var(--grey);
 }
 
+
 /* Aside */
 aside {
-    margin-right: 400px;
+    margin-left: 40px;
+    min-width: 300px;
+    max-width: 300px;
     grid-area: aside;
+}
+
+.cardRelatedProfileGrid {
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 20% auto;
 }
 
 /* Footer */
