@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
     --blue: #0A66C2;
+    --green: #057642;
     --white: #FFFFFF;
     --background: #f3f2ef;
     --golden: #5D3B09;
@@ -50,7 +51,6 @@ ul, li {
     text-decoration: none;
     display: inline-block;
     padding-right: 7px;
-    max-height: 43px;
 }
 
 a {
@@ -64,24 +64,28 @@ div {
     margin: 20px;
 }
 
-img  {
+header img, 
+img#profileImg,
+aside img  {
     border-radius: 50%;
 }
 
 button {
-    border-radius: 9999px;
+    border-radius: 9999px; 
+    margin-top: 5px;
     padding: 6px 16px;
     color: var(--grey);
     border: 1.5px solid var(--grey);
+    cursor: pointer;
 }
 
-button:nth-child(1) {
+button.firstButton {
     color: var(--white);
     background: var(--blue);
     border: 1.5px solid var(--blue);
 }
 
-button:nth-child(2) {
+button.secondButton {
     background: var(--white);
     color: var(--blue);
     border: 1.5px solid var(--blue);
@@ -90,6 +94,10 @@ button:nth-child(2) {
 .backgroundDivColor {
     background-color: var(--white);
     border: 1px solid var(--borderColor);
+}
+
+.paddingLeft {
+    padding-left: 7px;
 }
 
 /* Header */
@@ -164,6 +172,9 @@ nav#navbar > ul > li > a:hover {
     text-align: center;
 }
 
+.itensAllign {
+    align-items: center;
+}
 
 /* Main */
 main {
@@ -176,6 +187,7 @@ main {
 }
 
 .mediumImg {
+    max-height: 48px;
     width: 48px;
 }
 
@@ -246,6 +258,7 @@ div.bodyGrid {
 .fakeHorizontalRow {
     border-top: 1px solid var(--borderColor);
     border-radius: 0;
+    margin: -10px 20px 10px 20px;
 }
 
 .flexRows {
@@ -253,6 +266,17 @@ div.bodyGrid {
     padding: 0px;
     display: flex;
     flex-direction: row;
+}
+
+.interessButton {
+    background-color: var(--white);
+    color: var(--green);
+    border-radius: 0px;
+    border: none;
+}
+
+.interessButton:nth-child(1) {
+    border-bottom: 1.5px solid var(--green);
 }
 
 div.textAllign {
@@ -276,6 +300,11 @@ aside {
     grid-area: aside;
 }
 
+aside a {
+    color: var(--hoverGrey);
+    font-size: 16px;
+}
+
 .cardRelatedProfileGrid {
     font-size: 14px;
     margin: 0px 0px 10px 0px;
@@ -285,14 +314,68 @@ aside {
 
 /* Footer */
 footer {
-    margin: 0;
+    margin: auto;
     padding: 0;
     grid-area: footer;
-    width: auto;
+    max-width: 1200px;
+    max-height: 200px;
 }
 
 div#footerContainer {
-    margin: 0;
+    margin: auto;
     padding: 0;
     border-radius: 0px;
+    min-width: 1200px;
+    min-height: 200px;
+}
+
+.columnCounter2 {
+    margin: 0px;
+    display: grid;
+    grid-template-areas: 
+        "div div"
+    ; 
+
+    grid-template-columns: 50% 50%;
+}
+
+.columnCounter3 {
+    display: grid;
+    grid-template-areas: 
+        "li li li"
+    ; 
+
+    grid-template-columns: 33% 33% 33%;
+}
+
+.columnFooterLinks {
+    margin: 0px 0px 10px 0px;
+    display: grid;
+    grid-template-areas: 
+        "svg span"
+    ; 
+
+    grid-template-columns: 15% 85%;
+}
+
+ul.columnCounter3 > li.navFooterList {
+    margin-bottom: 10px;
+}
+
+#linkedinTrademark,
+li.navFooterList > a,
+li.columnFooterLinks,
+li.columnFooterLinks > span > a {
+    color: var(--grey);
+    font-size: 12px;
+}
+
+.navFooterList {
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+#linkedinTrademark {
+    padding-bottom: 20px;
 }

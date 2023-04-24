@@ -147,8 +147,8 @@
                     </div>
                     <div id="cardProfileButtons"
                         >
-                        <button><span>Tenho interesse em...</span></button>
-                        <button><span>Adicionar seção do perfil</span></button>
+                        <button class="firstButton"><span>Tenho interesse em...</span></button>
+                        <button class="secondButton"><span>Adicionar seção do perfil</span></button>
                         <button><span>Mais</span></button>
                     </div>
                 </div>
@@ -219,8 +219,8 @@
                         </div>
                         <div>
                             <h3>Estagiário de TI</h3>
-                            <span>Secretaria Municipal de Saúde · Tempo integral</span>
-                            <span>ago de 2022 - o momento · 9 meses</span>
+                            <span>Secretaria Municipal de Saúde · Tempo integral</span><br>
+                            <span>ago de 2022 - o momento · 9 meses</span><br>
                             <span>Umuarama, Paraná, Brasil</span>
                             <ul>
                                 <li>Suporte ao usuário do sistema Gestor Saúde da DB1 Group e e-SUS APS do Ministério da Saúde. Treinamento ao usuário.</li>
@@ -241,8 +241,8 @@
                         </div>
                         <div>
                             <h3>Atendente de alimentos e bebidas</h3>
-                            <span>Subway · Tempo integral</span>
-                            <span>mar de 2021 - set de 2022 · 1 ano 7 meses</span>
+                            <span>Subway · Tempo integral</span><br>
+                            <span>mar de 2021 - set de 2022 · 1 ano 7 meses</span><br>
                             <span>Umuarama, Paraná, Brasil</span>
                             <ul>
                                 <li><strong>Competências</strong>: Comunicação · Atendimento ao cliente</li>
@@ -271,8 +271,8 @@
                                     Unipar - Universidade Paranaense
                                 </a>
                             </h3>
-                            <span>Bacharelado, Gestão de Sistemas de Informação</span>
-                            <span>jan de 2021 - dez de 2024</span>
+                            <span>Bacharelado, Gestão de Sistemas de Informação</span><br>
+                            <span>jan de 2021 - dez de 2024</span><br>
                             <span>Umuarama, Paraná, Brasil</span>
                             <ul>
                                 <li><strong>Competências</strong>: Competências: Análise de requisitos · Resolução de problemas · Planejamento estratégico · Criatividade · Comunicação</li>
@@ -289,7 +289,7 @@
                 </div>
                 <div>
                     <h3>Análise de requisitos</h3>
-                    <div>
+                    <div class="flexRows itensAllign">
                         <img
                         src="assets/unipar.jpg"
                         alt=""
@@ -301,7 +301,7 @@
                     <div class="fakeHorizontalRow">
                     </div>
                     <h3>Solução de problemas técnicos</h3>
-                    <div>
+                    <div  class="flexRows itensAllign">
                         <img
                         src="assets/sms.png"
                         alt=""
@@ -313,7 +313,7 @@
                     <div class="fakeHorizontalRow">
                     </div>
                     <h3>Suporte técnico</h3>
-                    <div>
+                    <div class="flexRows itensAllign">
                         <img
                         src="assets/sms.png"
                         alt=""
@@ -336,23 +336,29 @@
                 </div>
                 <div>
                     <div>
-                        <button>
+                        <button class="interessButton">
                             <span>Empressas</span>
                         </button>
-                        <button>
+                        <button class="interessButton">
                             <span>Instituições de ensino</span>
                         </button>
                     </div>
-                    <div>
-                        <img
-                            src="./assets/unipar.jpg"
-                            alt=""
-                        >
-                        <h3>Unipar - Universidade Paranaense</h3>
-                        <span>37.090 seguidores</span>
-                        <button>
-                            <span>✓ Seguindo</span>
-                        </button>
+                        <div>
+                            <div class="flexRows itensAllign">
+                                <img
+                                    src="./assets/unipar.jpg"
+                                    alt=""
+                                    class="mediumImg"
+                                >
+                                <div>
+                                    <h3>Unipar - Universidade Paranaense</h3>
+                                    <span>37.090 seguidores</span>
+                                </div>
+                            </div>
+                            <button>
+                                <span>✓ Seguindo</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -373,11 +379,11 @@
                                 alt=""
                                 class="mediumImg">
                             </div>
-                            <div>
+                            <div class="paddingLeft">
                                 <span><a href="#">Antony Santos</a></span>
                                 <span>· 2º</span>
                                 <span>Software Developer | Frontend | React | Typescript</span>
-                                <button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button>
+                                <a href="#"><button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button></a>
                             </div>
                         </div>
                     </li>
@@ -391,11 +397,11 @@
                                 alt=""
                                 class="mediumImg">
                             </div>
-                            <div>
+                            <div class="paddingLeft">
                                 <span><a href="#">Joell Wington A.</a></span>
                                 <span>· 3º</span>
                                 <span>Tech Lead | Banco PassT</span>
-                                <button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button>
+                                <a href="#"><button><img src="./assets/conectar.png" alt=""><span>Conectar</span></button></a>
                             </div>
                         </div>
                     </li>
@@ -409,11 +415,11 @@
                                 alt=""
                                 class="mediumImg">
                             </div>
-                            <div>
+                            <div class="paddingLeft">
                                 <span><a href="#">Lindolfo Marreco S.</a></span>
                                 <span>· 3º</span>
                                 <span>Doutor em Ciências Humanas</span>
-                                <button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button>
+                                <a href="#"><button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button></a>
                             </div>
                         </div>
                     </li>
@@ -427,11 +433,11 @@
                                 alt=""
                                 class="mediumImg">
                             </div>
-                            <div>
-                                <span><a href="#"></a>Mirtes D'Batt</span>
+                            <div class="paddingLeft">
+                                <span><a href="#">Mirtes D'Batt</a></span>
                                 <span>· 2º</span>
                                 <span>Acadêmica de Sistemas de Informação</span>
-                                <button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button>
+                                <a href="#"><button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button></a>
                             </div>
                         </div>
                     </li>
@@ -458,11 +464,11 @@
                                 alt=""
                                 class="mediumImg">
                             </div>
-                            <div>
-                                <span><a href="#">Antony Santos</a></span>
-                                <span>· 2º</span>
-                                <span>Software Developer | Frontend | React | Typescript</span>
-                                <button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button>
+                            <div class="paddingLeft">
+                                <span><a href="#">Ricardo Con'All</a></span>
+                                <span>· 3º</span>
+                                <span>Estudante de Botânica</span>
+                                <a href="#"><button><img src="./assets/conectar.png" alt=""><span>Conectar</span></button></a>
                             </div>
                         </div>
                     </li>
@@ -476,11 +482,11 @@
                                 alt=""
                                 class="mediumImg">
                             </div>
-                            <div>
-                                <span><a href="#">Mirtes D'Batt</a></span>
+                            <div class="paddingLeft">
+                                <span><a href="#">Michelle Silva</a></span>
                                 <span>· 3º</span>
-                                <span>Tech Lead | Banco PassT</span>
-                                <button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button>
+                                <span>Engenheira Elétrica - Arduino</span>
+                                <a href="#"><button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button></a>
                             </div>
                         </div>
                     </li>
@@ -494,11 +500,11 @@
                                 alt=""
                                 class="mediumImg">
                             </div>
-                            <div>
-                                <span><a href="#">Lindolfo Marreco S.</a></span>
+                            <div class="paddingLeft">
+                                <span><a href="#">Jailson Mendes</a></span>
                                 <span>· 3º</span>
-                                <span>Doutor em Ciências Humanas</span>
-                                <button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button>
+                                <span>Docente na UniAlf4</span>
+                                <a href="#"><button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button></a>
                             </div>
                         </div>
                     </li>
@@ -512,11 +518,11 @@
                                 alt=""
                                 class="mediumImg">
                             </div>
-                            <div>
-                                <span><a href="#">Joell Wington A.</a></span>
+                            <div class="paddingLeft">
+                                <span><a href="#">Nilce de Melo A.</a></span>
                                 <span>· 2º</span>
-                                <span>Acadêmico de Sistemas de Informação</span>
-                                <button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button>
+                                <span>Esposa Troféu</span>
+                                <a href="#"><button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button></a>
                             </div>
                         </div>
                         <li>
@@ -529,11 +535,11 @@
                                 alt=""
                                 class="mediumImg">
                             </div>
-                            <div>
-                                <span><a href="#">Joell Wington A.</a></span>
+                            <div class="paddingLeft">
+                                <span><a href="#">Carlota Lenin</a></span>
                                 <span>· 2º</span>
-                                <span>Acadêmico de Sistemas de Informação</span>
-                                <button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button>
+                                <span>Estagiária - Recursos Humanos</span>
+                                <a href="#"><button><img src="./assets/conectar.png" alt=""> <span>Conectar</span></button></a>
                             </div>
                         </div>
                         </li>
@@ -548,71 +554,76 @@
             </div>
         </section>
     </aside>
-    <div></div>
     <footer>
         <section>
             <div id="footerContainer">
-                <div>
-                    <nav>
-                        <ul>
-                            <li>Sobre</li>
-                            <li>Acessibilidade</li>
-                            <li>Soluções de Talentos</li>
-                            <li>Diretrizes da Comunidade</li>
-                            <li>Carreiras</li>
-                            <li>Soluções de Marketing</li>
-                            <li>Termos e Privacidade</li>
-                            <li>Preferências de anúncios</li>
-                            <li>Publicidade</li>
-                            <li>Soluções de Vendas</li>
-                            <li>Para celular</li>
-                            <li>Pequenas empresas</li>
-                            <li>Central de Segurança</li>
-                        </ul>
-                    </nav>
-                </div>
-                <div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
-                                    <path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 16.25A1.25 1.25 0 1113.25 17 1.25 1.25 0 0112 18.25zm1.41-5.46L13 13v1h-2v-2.21l1.49-.79C13.82 10.34 14 9.77 14 9.3c0-.78-.92-1.3-2.3-1.3A7.12 7.12 0 008 9.24V7a8 8 0 013.7-1c3 0 4.3 1.55 4.3 3.3a3.91 3.91 0 01-2.59 3.49z"></path>
-                                </svg>
-                                <span>
-                                    <a href="#">Dúvidas?</a>
-                                    <p>Acesse a nossa Central de Ajuda.</p>
-                                </span>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
-                                    <path d="M9.18 2l-4.3 2.52L6.22 8l-.52.91-3.7.55v5l3.64.54.54.93-1.34 3.53L9.14 22l2.29-2.9h1.09l2.3 2.9 4.32-2.52L17.79 16l.53-.93 3.68-.53v-5L18.32 9l-.51-.9 1.36-3.51L14.86 2l-2.33 3h-1zM12 9a3 3 0 11-3 3 3 3 0 013-3z"></path>
-                                </svg>
-                                <span>
-                                    <a href="#">Gerencie sua conta e privacidade</a>
-                                    <p>Acesse suas Configurações.</p>
-                                </span>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
-                                    <path d="M12 4.11V19.6l-3-2a9 9 0 01-4-7.49V6.44l7-2.33M12 2L3 5v5.11a11 11 0 004.9 9.16L12 22l4.1-2.73a11 11 0 004.9-9.16V5z"></path>
-                                </svg>
-                                <span>
-                                    <a href="#">Visibilidade da recomendação</a>
-                                    <p>Saiba mais sobre os conteúdos recomendados.</p>
-                                </span>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="columnCounter2">
                     <div>
-                        <label for="languageSelector">Selecionar idioma</label>
-                        <select id="languageSelector">
-                            <option value="pt_BR" lang="pt-br">Português (Brasil)</option>
-                            <option value="ru_RU" lang="ru-ru">Русский (Russo)</option>
-                            <option value="zh_TW" lang="zh-tw">正體中文 (Chinês (Tradicional))</option>
-                        </select>
+                        <nav>
+                            <ul class="columnCounter3">
+                                <li class="navFooterList"><a href="#">Sobre</a></li>
+                                <li class="navFooterList"><a href="#">Acessibilidade</a></li>
+                                <li class="navFooterList"><a href="#">Soluções de Talentos</a></li>
+                                <li class="navFooterList"><a href="#">Diretrizes da Comunidade</a></li>
+                                <li class="navFooterList"><a href="#">Carreiras</a></li>
+                                <li class="navFooterList"><a href="#">Soluções de Marketing</a></li>
+                                <li class="navFooterList"><a href="#">Termos e Privacidade</a></li>
+                                <li class="navFooterList"><a href="#">Preferências de anúncios</a></li>
+                                <li class="navFooterList"><a href="#">Publicidade</a></li>
+                                <li class="navFooterList"><a href="#">Soluções de Vendas</a></li>
+                                <li class="navFooterList"><a href="#">Para celular</a></li>
+                                <li class="navFooterList"><a href="#">Pequenas empresas</a></li>
+                                <li class="navFooterList"><a href="#">Central de Segurança</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="columnCounter2">
+                        <div>
+                            <nav>
+                                <ul>
+                                    <li class="columnFooterLinks">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 16.25A1.25 1.25 0 1113.25 17 1.25 1.25 0 0112 18.25zm1.41-5.46L13 13v1h-2v-2.21l1.49-.79C13.82 10.34 14 9.77 14 9.3c0-.78-.92-1.3-2.3-1.3A7.12 7.12 0 008 9.24V7a8 8 0 013.7-1c3 0 4.3 1.55 4.3 3.3a3.91 3.91 0 01-2.59 3.49z"></path>
+                                        </svg>
+                                        <span>
+                                            <a href="#">Dúvidas?</a>
+                                            <p>Acesse a nossa Central de Ajuda.</p>
+                                        </span>
+                                    </li>
+                                    <li class="columnFooterLinks">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M9.18 2l-4.3 2.52L6.22 8l-.52.91-3.7.55v5l3.64.54.54.93-1.34 3.53L9.14 22l2.29-2.9h1.09l2.3 2.9 4.32-2.52L17.79 16l.53-.93 3.68-.53v-5L18.32 9l-.51-.9 1.36-3.51L14.86 2l-2.33 3h-1zM12 9a3 3 0 11-3 3 3 3 0 013-3z"></path>
+                                        </svg>
+                                        <span>
+                                            <a href="#">Gerencie sua conta e privacidade</a>
+                                            <p>Acesse suas Configurações.</p>
+                                        </span>
+                                    </li>
+                                    <li class="columnFooterLinks">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M12 4.11V19.6l-3-2a9 9 0 01-4-7.49V6.44l7-2.33M12 2L3 5v5.11a11 11 0 004.9 9.16L12 22l4.1-2.73a11 11 0 004.9-9.16V5z"></path>
+                                        </svg>
+                                        <span>
+                                            <a href="#">Visibilidade da recomendação</a>
+                                            <p>Saiba mais sobre os conteúdos recomendados.</p>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div>
+                            <label for="languageSelector">Selecionar idioma</label>
+                            <select id="languageSelector">
+                                <option value="pt_BR" lang="pt-br">Português (Brasil)</option>
+                                <option value="ru_RU" lang="ru-ru">Русский (Russo)</option>
+                                <option value="zh_TW" lang="zh-tw">正體中文 (Chinês (Tradicional))</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <p>LinkedIn Corporation © 2023</p>
+                <div id="linkedinTrademark">
+                    <p>LinkedIn Corporation © 2023</p>
+                </div>
             </div>
         </section>
     </footer>
